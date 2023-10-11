@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PazaramaTaskSuite">
+    <test name="Task Tests" parallel="false">
+        <classes>
+            <class name="com.pazarama.tests.LoginTest"/>
+            <class name="com.pazarama.tests.AddToFavoriteTest"/>
+            <class name="com.pazarama.tests.ChosenSubCategoryTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+    </listeners>
+</suite>
+
+
+
+<!--        <?xml version = "1.0" encoding = "UTF-8"?>-->
+<!--<suite name = "Simple Logger Suite">-->
+<!--<listeners>-->
+<!--    <listener class-name = "com.pazarama.utilities.CustomListener" />-->
+<!--</listeners>-->
+
+<!--<test name = "Simple Logger test">-->
+<!--    <classes>-->
+<!--        <class name = "com.pazarama.utilities.Log" />-->
+<!--    </classes>-->
+<!--</test>-->
+<!--</suite>-->
